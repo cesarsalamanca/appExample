@@ -1,3 +1,40 @@
-page-home {
+page-home{
+    .margin-top-15{
+        margin-top: 15px !important
+    }
 
+    .margin-top-65{
+        margin-top: 65px !important
+    }
+
+    .shadow-primary:hover{
+        background-color: #488aff !important;
+        color: white;
+        border: 1px white solid;
+    }
+
+    .shadow-secondary:hover{
+        background-color: #30d05f !important;
+        color: white;
+        border: 1px white solid;
+    }
+
+    .shadow-dark-clear:hover{
+        background-color: transparent !important
+    }
+
+    ion-content{
+        margin-top: 75px;
+
+        ion-img{
+            display: table-header-group;
+        }
+    
+        ion-list{
+            ion-item{
+                margin-top: 10px !important;
+                margin-bottom: 10px !important;
+            }
+        }
+    }
 }
