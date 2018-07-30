@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+    <ion-title>Registro</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-item>
+            <ion-label>{{labelNombres}}</ion-label>
+            <ion-input type="text" [(ngModel)]="nombres"></ion-input>
+          </ion-item>
+
+        <ion-item>
+          <ion-label>{{labelApellidos}}</ion-label>
+          <ion-input type="text" [(ngModel)]="apellidos"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label>{{labelUsuario}}</ion-label>
+          <ion-input type="text" [(ngModel)]="usuario"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>{{labelClave}}</ion-label>
+          <ion-input type="password" [(ngModel)]="clave"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>{{labelConfirmacionClave}}</ion-label>
+          <ion-input type="password" [(ngModel)]="confirmacionClave"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>{{labelEmail}}</ion-label>
+            <ion-input type="text" [(ngModel)]="email"></ion-input>
+          </ion-item>
+  
+          <ion-item>
+            <ion-label>{{labelConfirmacionEmail}}</ion-label>
+            <ion-input type="text" [(ngModel)]="confirmacionEmail"></ion-input>
+          </ion-item>
+      </ion-list>
+  
+      <button class="shadow-secondary margin-top-15" color="secondary" ion-button outline block  [disabled]="!esValidoIniciarSesion()" (click)="registro()">Registrarme</button>
+      <button class="shadow-dark-clear margin-top-65" color="dark" ion-button block clear (click)="paginaInicio()">Regresar al Inicio</button>
+    </ion-content>

@@ -1,4 +1,4 @@
-page-home{
+page-signup {
     .margin-top-15{
         margin-top: 15px !important
     }
@@ -22,21 +22,21 @@ page-home{
     .shadow-dark-clear:hover{
         background-color: transparent !important
     }
+    ion-header{
+        background-color: #488aff !important;
+        padding: 10px;
 
-    ion-content{
+        ion-navbar{
+            ion-title{
+                padding-top: 10px;
+                text-align: center !important;
+            }
+        }
+    }
+
+    ion-content {
         .scroll-content {
             overflow: hidden !important;
-        }
-
-        ion-img{
-            display: table-header-group;
-        }
-    
-        ion-list{
-            ion-item{
-                margin-top: 10px !important;
-                margin-bottom: 10px !important;
-            }
         }
     }
 }

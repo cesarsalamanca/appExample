@@ -4,16 +4,16 @@
   <ion-list>
       <ion-item>
         <ion-label>{{labelUsuario}}</ion-label>
-        <ion-input type="text" value=""></ion-input>
+        <ion-input type="text" [(ngModel)]="usuario"></ion-input>
       </ion-item>
     
       <ion-item>
         <ion-label>{{labelClave}}</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-input type="password" [(ngModel)]="clave"></ion-input>
       </ion-item>
     </ion-list>
 
-    <button class="shadow-primary margin-top-65" ion-button outline block>Ingresar</button>
-    <button class="shadow-secondary margin-top-15" color="secondary" ion-button outline block>registrarse</button>
-    <button class="shadow-dark-clear margin-top-65" color="dark" ion-button block clear>Recuperar Contraseña</button>
+    <button class="shadow-primary margin-top-65" ion-button outline block [disabled]="!esValidoIniciarSesion()" (click)="iniciarSesion()">Ingresar</button>
+    <button class="shadow-secondary margin-top-15" color="secondary" ion-button outline block (click)="paginaRegistro()">Registrarse</button>
+    <button class="shadow-dark-clear margin-top-65" color="dark" ion-button block clear (click)="recuperarClave()">Recuperar Contraseña</button>
   </ion-content>
